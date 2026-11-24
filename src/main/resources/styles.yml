@@ -1,0 +1,9 @@
+# The defaults for the styles of this plugin's own. The file stays in the JAR: when the plugin starts,
+# VersatiaCore adds what the server lacks to plugins/VersatiaCore/styles.yml, the one file an admin
+# edits, and what that file already defines wins
+# The name of the general channel, in front of its lines
+generalChannel: "<dark_aqua>"
+# The line under the player's name in the card shown on hover over it
+cardSeparator: "<dark_gray>"
+# What players write in chat, quieter than their names
+chatText: "<gray>"

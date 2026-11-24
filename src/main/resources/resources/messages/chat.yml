@@ -1,0 +1,19 @@
+# The parts of a chat line. The frame around them, "{channel} {sender}: {message}", or
+# "{sender}: {message}" for a channel without a name, is a chat type VersatiaChat writes into the
+# world's datapacks. <generalChannel>, <cardSeparator> and <chatText> are styles of this plugin;
+# plugins/VersatiaCore/styles.yml says how they look.
+# The name of a channel, in front of its lines; an empty name, "", leaves its lines without one
+channel:
+  general: "<generalChannel>** General **</generalChannel>"
+# The name of whoever writes, {player}
+sender: "{player}"
+# The card shown on hover over the sender's name, one line per entry. Besides {player.level}, the
+# player has {player.name}, {player.health}, {player.foodLevel}, {player.gameMode} and {player.ping},
+# and whatever a server presentation of players adds
+card:
+  - "{player}"
+  - "<cardSeparator>----------------</cardSeparator>"
+  - "<label>Level:</label> {player.level}"
+# What the player wrote, {text}, as typed: tags in it stay plain text. Keep {text} whole, since the
+# client checks that the line still holds what the player signed
+text: "<chatText>{text}</chatText>"

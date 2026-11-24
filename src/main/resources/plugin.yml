@@ -1,0 +1,10 @@
+name: VersatiaChat
+version: '${version}'
+main: dev.versatia.chat.ChatPlugin
+api-version: '26.3'
+author: Versatia
+website: https://versatia.dev/
+description: Player chat delivered as Minecraft's own signed chat, in a frame of its own.
+# Kotlin and kotlinx.coroutines classes come from VersatiaCore's class loader; do not list kotlin-stdlib or kotlinx-coroutines here
+depend:
+  - VersatiaCore
