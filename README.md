@@ -14,12 +14,12 @@ and [for server admins](https://versatia.dev/admin/experimental/chat).
 
 ## Installing
 
-Put `VersatiaChat.jar` into `plugins/` next to VersatiaCore and start the server. VersatiaChat
-writes its datapack into the main world's `datapacks` folder and logs that it did; the server reads
-chat types only when it starts, so lines take the frame `{channel} {sender}: {message}` from the next
-restart on. Until then they use the frame of vanilla team chat, `** General ** <Steve> hello`, or of
-vanilla chat for a channel without a name, `<Steve> hello`.
-Players install nothing: the server sends them the chat type when they join. See
+Put `VersatiaChat.jar` into `plugins/` next to VersatiaCore, which it requires (it needs no other
+plugin), and start the server. VersatiaChat writes its datapack into the main world's `datapacks`
+folder and logs that it did; the server reads chat types only when it starts, so lines take the
+frame `{channel} {sender}: {message}` from the next restart on. Until then they use the frame of
+vanilla team chat, `** General ** <Steve> hello`, or of vanilla chat for a channel without a name,
+`<Steve> hello`. Players install nothing: the server sends them the chat types when they join. See
 [docs/chat.md](docs/chat.md#the-frame).
 
 ## Configuring
